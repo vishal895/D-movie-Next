@@ -3,6 +3,9 @@ import React from 'react'
 import MovieCard from '../component/MovieCard';
 
 const page = async () => {
+  
+  // await new Promise(executor:resolve => setTimeout(resolve:timeout,2000))
+
   const url = 'https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en';
 const options = {
   method: 'GET',
