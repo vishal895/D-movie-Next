@@ -21,18 +21,23 @@ const response = await fetch(url, options);
   return (
 
     <>
-    <div className=''>
+    
       <div className=''>
-        <h1>Series & Movie</h1>
+        <h1 className='text-center font-2xl font-black'>Series & Movie</h1>
+        <div className='grid grid-cols-4 justify-items-center mt-5 gap-3'>
         {
           main_data.map((curElem) =>{
             return(
-              <MovieCard key={curElem.id} {...curElem}/>
+              
+               <MovieCard key={curElem.id} {...curElem}/>
+             
+              
             )
           })
         }
+         </div>
       </div>
-    </div>
+    
     
     </>
   )

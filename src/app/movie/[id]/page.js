@@ -19,12 +19,12 @@ const page = async({params}) => {
 
   return (
     <div className=''>
-     <h2 className=''>Netflix\ <span>{main_data.type}</span></h2>
-     <div className=''>
-      <div className=''>
-        <Image src={main_data.backgroundImage.url} alt={main_data.title} width={600} height={300}/>
+     <h2 className='text-center text-blue-700 text-3xl'>Netflix\ <span>{main_data.type}</span></h2>
+     <div className='bg-white p-5  w-[800px] shadow-2xl box-shadow  text-left rounded-[5px] mx-auto mt-9'>
+      <div className='image_portion'>
+        <Image src={main_data.backgroundImage.url} alt={main_data.title} width={800} height={300}/>
       </div>
-      <h1>{main_data.title}</h1>
+      <h1 className='text-lg font-bold'>{main_data.title}</h1>
       <p>{main_data.synopsis}</p>
      </div>
     </div>
